@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Task-1</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <script>
+        function Reverse(){
+            var x=parseInt(document.getElementById('x').value);
+            var rev=0;
+            while(x>0){
+                rev=rev*10+x%10;
+                x=parseInt(x/10);
+            }
+            document.getElementById('result').textContent=rev.toString()
+        }
+       
+    </script>
+</head>
+<body>
+    <center>
+    <h2 class=" m-5">Reversing a Number</h2>
+    <b>Example x :</b> <input type="number" id="x" >
+    <div>
+    <button onclick="Reverse()" class="bg-info mt-5" style="border-width:0px; border-radius:6px;">Submit</button><br><br>
+</div>
+   <b>Expected output :</b>  <span id="result"></span>
+</center>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

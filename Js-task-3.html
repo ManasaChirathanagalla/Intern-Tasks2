@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript task-3</title>
+    <style>
+        .container {
+            width: 300px; 
+            border: 2px solid black; 
+            padding: 10px;
+            text-align: left;
+            margin-top:100px;
+            height:150px;
+        }
+        button:hover{
+            border-color: aqua;
+            border-radius: 2px;
+        }
+
+       
+    </style>
+</head>
+<body>
+    <center>
+        <div class="container">
+            <label for="1num">1st Number :</label>
+            <input type="text" id="x"/><br><br>
+            <label for="2num">2nd Number:</label>
+            <input type="text" id="y"/><br><br>
+            <button onclick="Multiply()">Multiply</button>
+            <button onclick="Divide()">Divide</button>
+            <p id="result"></p>
+        </div>
+    </center>
+    <script>
+        function Multiply() {
+            let x = parseInt(document.getElementById("x").value);
+            let y = parseInt(document.getElementById("y").value);
+            document.getElementById("result").innerHTML = "The Result Is: <br>" + x * y;
+        }
+        function Divide() {
+            let x = parseInt(document.getElementById("x").value);
+            let y = parseInt(document.getElementById("y").value);
+            document.getElementById("result").innerHTML = "The Result Is:<br> " + x /y;
+        }
+         
+
+       
+    </script>
+</body>
+</html>
